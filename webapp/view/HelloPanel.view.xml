@@ -3,8 +3,6 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	displayBlock="true"
-	height="100%"
-	busyIndicatorDelay="0"
 >
 	<Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto" >
 		<content>
