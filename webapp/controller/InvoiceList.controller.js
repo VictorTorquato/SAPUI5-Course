@@ -9,9 +9,9 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("sap.ui.demo.walkthrough.controller.InvoiceList", {
-	
+
 		formatter: formatter,
-		
+
 		onInit: function () {
 			var oViewModel = new JSONModel({
 				currency: "EUR"
@@ -20,14 +20,12 @@ sap.ui.define([
 		},
 
 		onFilterInvoices: function (oEvent) {
-
 			// Build filter array
 			var aFilter = [];
 			var sQuery = oEvent.getParameter("query");
 			if(sQuery){
 				aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
 			};
-
 			// Filter binding
 			var oList = this.byId("invoiceList");
 			var oBinding = oList.getBinding("items");

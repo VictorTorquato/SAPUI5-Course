@@ -1,8 +1,7 @@
 <mvc:View
 	controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
 	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
->
+	xmlns:mvc="sap.ui.core.mvc">
 	<List
 		headerText="{i18n>invoiceListTitle}"
 		id="invoiceList"
@@ -39,7 +38,7 @@
 						path: 'invoice>Status',
 						formatter: '.formatter.statusText'
 					}"/>
-					</firstStatus>
+				</firstStatus>
 			</ObjectListItem>
 		</items>
 	</List>
