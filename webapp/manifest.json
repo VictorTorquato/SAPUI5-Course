@@ -105,8 +105,8 @@
                     "target": "overview"
                 },
                 {
-                    "pattern": "detail",
-                    "name": "details",
+                    "pattern": "detail/{invoicePath}",
+                    "name": "detail",
                     "target": "detail"
                 }
             ],
