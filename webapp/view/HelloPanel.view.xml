@@ -4,11 +4,21 @@
 	xmlns="sap.m"
 	displayBlock="true"
 >
-	<Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto" >
+	<Panel 
+		headerText="{i18n>helloPanelTitle}" 
+		class="sapUiResponsiveMargin" 
+		width="auto" 
+		expandable="{device>/System/phone}"
+		expanded="{= !${device>System/phone}}">
 		<content>
-			<Button id="helloDialogButton" icon="sap-icon://world" text="{i18n>openDialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd"/>
 			<Button 
-				text="{i18n>showHelloButtonText}" 
+				id="helloDialogButton" 
+				icon="sap-icon://world" 
+				text="{i18n>openDialogButtonText}" 
+				press=".onOpenDialog" 
+				class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
+			<Button 
+				text="{i18n>showHelloButtonText}"
 				press=".onShowHello"
 				class="myCustonButton" 
 				/>
