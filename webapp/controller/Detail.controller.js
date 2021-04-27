@@ -13,7 +13,7 @@ sap.ui.define([
 			var oVIewModel = new JSONModel({
 				currency: "EUR"
 			});
-			this.getView().setModel(oViewModel, "view");
+			this.getView().setModel(oVIewModel, "view");
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.getRoute("detail").attachPatternMatched(this._onObjectMatched, this);
 		},

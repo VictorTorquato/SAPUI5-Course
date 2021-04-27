@@ -21,12 +21,12 @@
 				<ObjectAttribute title="{i18n>quantityTitle}" text="{invoice>Quantity}">
 				</ObjectAttribute>
 				<ObjectAttribute title="{i18n>dateTitle}" text="{
-					path: 'invoice>ShippeDate'
+					path: 'invoice>ShippedDate',
 					type: 'sap.ui.model.type.Date',
 					formatOptions: {
-						styles: 'long',
+						style: 'long',
 						source: {
-							pattern: 'yyyy'-MM=ddTHH:mm:ss'
+						  pattern: 'yyyy-MM-ddTHH:mm:ss'
 						}
 					}	
 				}"/>

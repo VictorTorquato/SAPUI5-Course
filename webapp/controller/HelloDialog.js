@@ -38,6 +38,10 @@ sap.ui.define([
 			} else {
 				oView.byId("helloDialog").open();
 			};
+		},
+
+		onCloseDialog : function() {
+			oView.byId("helloDialog").close();
 		}
 	});
 });
